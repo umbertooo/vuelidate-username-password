@@ -18,15 +18,12 @@ export default {
     };
   },
   validations: {
-    username: {
-      required
-    },
+    username: { required },
     password: { required }
   },
   methods: {
     submit() {
       this.$v.$touch();
-      console.log("form submitted");
     }
   }
 };
